@@ -1,2 +1,2 @@
 #!/bin/bash
-cp tpm/ *.html . /root
+cp -rua *.html ../
