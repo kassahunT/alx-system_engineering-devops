@@ -36,6 +36,7 @@ listen hbnb
     option forwardfor
     server 3891-web-01 3.236.245.84 check
     server 3891-web-02 3.236.172.229 check
+    server 3891-lb-01 44.210.133.244 check
 " >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
