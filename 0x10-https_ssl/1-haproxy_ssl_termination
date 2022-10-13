@@ -33,8 +33,8 @@ frontend www-https
 backend www-backend
    balance  roundrobin
    redirect scheme https if !{ ssl_fc }
-   server 3891-web-01 3.236.245.84:80 check
-   server 3891-web-02 3.236.172.229:80 check
+   server 3891-web-01 18.206.12.40:80 check
+   server 3891-web-02 34.239.177.92:80 check
 
 backend letsencrypt-backend
    server letsencrypt 127.0.0.1:54321
