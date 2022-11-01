@@ -35,7 +35,7 @@ listen hbnb
     option httpclose
     option forwardfor
     server 3891-web-01 54.160.92.16 check 
-    server 3891-web-02 100.25.199.225 check 
+    server 3891-web-02 100.25.199.225 check backup 
 " >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy start
